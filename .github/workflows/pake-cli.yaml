@@ -209,6 +209,8 @@ jobs:
             $args += "--new-window"
           }
 
+          $args += "--no-restore-last-url"
+
           Write-Host "Running: node dist/cli.js $($args -join ' ')"
           node dist/cli.js $args
 
